@@ -21,7 +21,7 @@ data class Data (
 
 fun get(currency : String) : ExchangeModel? {
     val request = Request.Builder().url(url+currency).build()
-    val response = OkHttpClient().let { it.newCall(request) }.execute()
+    val response = OkHttpClient().newCall(request).execute()
     return if(response.isSuccessful) {
         Json.decodeFromString(ExchangeModel.serializer(), response.body!!.string())
     } else {

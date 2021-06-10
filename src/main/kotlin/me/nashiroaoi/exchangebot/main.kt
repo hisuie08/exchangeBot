@@ -50,7 +50,7 @@ class SearchCurrency:Command(){
 }
 
 class BotClient{
-    lateinit var jda: JDA
+    private lateinit var jda: JDA
     fun main(token: String) {
         val commandClient = CommandClientBuilder()
             .setPrefix("")
