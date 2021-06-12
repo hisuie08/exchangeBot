@@ -1,4 +1,4 @@
-package me.nashiroaoi.exchangebot
+package me.nashiroaoi.exchangebot.internal
 
 import kotlinx.serialization.*
 import kotlinx.serialization.json.Json

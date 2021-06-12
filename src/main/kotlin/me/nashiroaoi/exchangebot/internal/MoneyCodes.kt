@@ -1,4 +1,4 @@
-package me.nashiroaoi.exchangebot
+package me.nashiroaoi.exchangebot.internal
 
 enum class MoneyCodes(val country:String,val currency:String) {
     AED("アラブ首長国連邦","ディルハム"),
